@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 "$@"
 RET=$?
 if [ "$RET" != "0" ]; then
