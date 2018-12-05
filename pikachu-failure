@@ -1,0 +1,7 @@
+"$@"
+RET=$?
+if [ "$RET" != "0" ]; then
+    DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+    cat "$DIR/pikachu.txt"
+fi
+exit $RET
